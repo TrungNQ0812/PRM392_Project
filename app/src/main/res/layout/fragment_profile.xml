@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:gravity="center_horizontal">
+
+        <!-- Avatar -->
+        <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_person"
+                android:contentDescription="Avatar"
+                android:background="@drawable/circle_bg"
+                android:padding="16dp"
+                android:layout_marginBottom="24dp"/>
+
+        <!-- Họ tên -->
+        <TextView
+                android:id="@+id/tvFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Văn A"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#222"
+                android:layout_marginBottom="8dp"/>
+
+        <!-- Username -->
+        <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username: student01"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:layout_marginBottom="8dp"/>
+
+        <!-- Email -->
+        <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: student01@gmail.com"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:layout_marginBottom="8dp"/>
+
+        <!-- Loại tài khoản -->
+        <TextView
+                android:id="@+id/tvRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại tài khoản: Học sinh"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:layout_marginBottom="8dp"/>
+
+        <!-- Ngày sinh (chỉ học sinh) -->
+        <TextView
+                android:id="@+id/tvDob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày sinh: 20/10/2005"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:layout_marginBottom="8dp"/>
+
+        <!-- Giới tính (chỉ học sinh) -->
+        <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giới tính: Nam"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:layout_marginBottom="8dp"/>
+
+        <!-- Lớp (chỉ học sinh) -->
+        <TextView
+                android:id="@+id/tvClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lớp: 10"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:layout_marginBottom="16dp"/>
+
+        <!-- Nút sửa thông tin -->
+        <Button
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Chỉnh sửa"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_button" />
+
+        <!-- Nút đăng xuất -->
+        <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Đăng xuất"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="8dp"
+                android:background="@null" />
+
+    </LinearLayout>
+</ScrollView>

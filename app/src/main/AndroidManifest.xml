@@ -13,27 +13,44 @@
             android:theme="@style/Theme.QuizApp"
             tools:targetApi="31">
         <activity
+                android:name=".ui.student.activity.StudentHomeActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.subject.activity.SubjectListActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.auth.activity.RegisterActivity"
+                android:exported="false" />
+        <activity
                 android:name=".ui.quiz.activity.QuizActivity"
                 android:exported="false">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
                 android:name=".ui.quiz_category.activity.QuizListActivity"
+                android:exported="false">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+                android:name=".ui.auth.activity.LoginActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-                android:name=".ui.auth.activity.LoginActivity"
-                android:exported="false" />
-        <activity
                 android:name=".MainActivity"
-                android:exported="true">
+                android:exported="false">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
