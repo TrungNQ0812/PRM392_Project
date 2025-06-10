@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#F7F7F7">
+
+    <TextView
+            android:id="@+id/tvQuizProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Câu 1/10"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#1976D2"
+            android:layout_gravity="center_horizontal" />
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_marginVertical="8dp"
+            android:background="#1976D2"
+            android:alpha="0.1" />
+
+    <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nội dung câu hỏi sẽ hiển thị ở đây"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginVertical="16dp"
+            android:gravity="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
+
+    <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Câu tiếp theo"
+            android:enabled="false"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+</LinearLayout>
